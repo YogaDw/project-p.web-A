@@ -1,79 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>E TOURISM UNEJ</title>
-	<link rel="shortcut icon" href="img/logounej.png">
-	<link rel="stylesheet" type="text/css" href="css/css.css">
-	<script src="js/js.js"></script>
-
-
-
+    <title>E TOURISM UNEJ</title>
+    <script src="js/js.js"></script>
+	<link rel="shortcut icon" href="images/logounej.png">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    
 </head>
 <body>
 
 	<section class="nvb">
 		<header>
 			<div class="margins">
-				<a href="index.html"><img src="img/logounej.png" class="logo" alt=""  width="50" height="50"  titl=""/></a>
-				
+				<a href="index.html"><img src="images/logounej.png" class="logo" alt=""  width="50" height="50"  titl=""/></a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="etourism.html">E-Tourism</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-							<div class="login_btn">
-									<a href="#login_form" id="login_pop">Log In</a></div>
-									<div class="login_btn"><a href="#join_form" id="join_pop">Sign Up</a></div>
-									
-		
-							</div>
-							<!-- popup form #1 -->
-							<a href="#x" class="overlay" id="login_form"></a>
-							<div class="popup">
-								<h2>Welcome Guest!</h2>
-								<p>Please enter your login and password here</p>
-								<div>
-									<label for="login">Login</label>
-									<input type="text" id="login" value="" />
-								</div>
-								<div>
-									<label for="password">Password</label>
-									<input type="password" id="password" value="" />
-								</div>
-								<input type="button" value="Log In" />
-								<a class="close" href="#close"></a>
-							</div>
-						
-							<!-- popup form #2 -->
-							<a href="#x" class="overlay" id="join_form"></a>
-							<div class="popup">
-								<h2>Sign Up</h2>
-								<p>Please enter your details here</p>
-								<div>
-									<label for="email">Login (Email)</label>
-									<input type="text" id="email" value="" />
-								</div>
-								<div>
-									<label for="pass">Password</label>
-									<input type="password" id="pass" value="" />
-								</div>
-								<div>
-									<label for="firstname">First name</label>
-									<input type="text" id="firstname" value="" />
-								</div>
-								<div>
-									<label for="lastname">Last name</label>
-									<input type="text" id="lastname" value="" />
-								</div>
-								<input type="button" value="Sign Up" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Log In</a>
-						
-								<a class="close" href="#close"></a>
-							</div>
-						
-				
-					
-					</div>
+                        <li><a href="about.html">About</a></li>
+                        <li> <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+                        <div id="id01" class="modal">
+  
+                                <form class="modal-content animate" name="login">
+                                  <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="images/logounej.png" alt="Avatar" class="avatar">
+                                  </div>
+                              
+                                  <div class="container">
+                                    <label for="username"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="username" required>
+                              
+                                    <label for="password"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                      
+                                    <button type="button" value="Login" onClick="Login()">Login</button>
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                  </div>
+                              
+                                  <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                  </div>
+                                </form>
+                              </div>
+                    </ul>	
 				</nav>
 			</div>
 		</header>
@@ -82,49 +55,51 @@
 				<h2 class="caption">E-Tourism</h2>
 				<h3 class="properties">Di Universitas Jember</h3>
 			</section>
-    </section>
-    <section class="content">
-            <div class="margins">    
-                    <div class="form-style-2">
-                            <div class="form-style-2-heading">AYO BURUAN DAFTAR</div>
-                            <form action="" method="post">
-                            <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-                            <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
-                            <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value="" maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4"  />-<input type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10"  /></label>
-                            <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
-                            <option value="General Question">General</option>
-                            <option value="Advertise">Advertisement</option>
-                            <option value="Partnership">Partnership</option>
-							</select></label>
-							<label for="field1"><span>File <span class="required">*</span></span><input type="file" class="input-field" name="field1" value="" id="file" onchange="return validasiFile()"/></label>
-                            <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
-                            
-                            <label><span> </span><input type="submit" value="Submit" /></label>
-                            </form>
-                            </div>           
-            
-            </div>
-    </section>
+	</section>
+	<section class="content">
+		<div class="margins">
 
+                <div>
+                        <h1>Form Pendaftaran E-Tourism Unej</h1>
+                        <form action="#">
+                          <label for="fname">Nama Sekolah</label>
+                          <input type="text" id="ns" name="namasekolah" placeholder="Nama Sekolah..">
+                              
+                          <label for="email">Email</label>
+                          <input type="text" id="email" name="email" placeholder="Email..">
+                          
+                          <label for="lname">Alamat Sekolah</label>
+                          <input type="text" id="alamat" name="email" placeholder="Alamat Sekolah..">
+                      
+                          <label for="country">Pilih Fakultas Etourism Unej</label>
+                          <select id="country" name="country">
+                            <option value="australia">Fakultas Kedokteran</option>
+                            <option value="canada">Fakultas Kedokteran Gigi</option>
+                            <option value="usa">Fakultas Teknik</option>
+                            <option value="usa">Fakultas Pertanian </option>
+                            <option value="usa">Fakultas Keperawatan </option>
+                            <option value="usa">Fakultas Kesehatan Masyarakat </option>
+                            <option value="usa">Fakultas Hukum</option>
+                            <option value="usa">Fakultas Ekonomi</option>
+                            <option value="usa">Fakultas Ilmu Komputer</option>
+                            <option value="usa">Fakultas Ilmu Sosial dan Ilmu Politik</option>
+                            <option value="usa">Fakultas MIPA</option>
+                            <option value="usa">Fakultas Teknologi Pertanian</option>
+                            <option value="usa">Fakultas Ilmu Pendidikan</option>
+                          </select>
+                        
+                          <input type="submit" value="Submit">
+                        </form>
+                      </div>
 
-
-
-
+		</div>
+      
+    </section>	
 
 	<footer>
-		<div class="margins footer">
-			<ul>
-				<li class="links">
-					<ul>
-					
-					</ul>
-				</li>
-			</ul>
-		</div>
+		<center>PERANCANGAN WEBSITE</center>
+		
 
-		<div class="copyrights margins">
-		PERANCANGAN WEBSITE
-		</div>
 	</footer>
 	
 </body>

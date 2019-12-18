@@ -1,0 +1,15 @@
+UAS PWEB
+Poin wajib uas
+1. Ajax(v)
+2. modal (v)
+3. Extends jquery(v)
+4. Html harus dipisah dengan css (v)
+5. Canvas (ga wajib)
+
+Ada 2 format UAS 
+1. Bikin video kyk game streaming
+2. Presentasi ke dosen
+Bisa mulai skg sampe 13 desember
+Untuk lebih jelas nya silahkan download ppt di e-learning
+
+Pokoknya itunya semua diambil dari github
