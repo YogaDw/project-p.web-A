@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>E TOURISM UNEJ</title>
-    <script src="js/js.js"></script>
+	<title>E TOURISM UNEJ</title>
+	<script src="js/js.js"></script>
 	<link rel="shortcut icon" href="images/logounej.png">
-    <link rel="stylesheet" type="text/css" href="css/css.css">
-    
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
 </head>
+
 <body>
 
 	<section class="nvb">
 		<header>
 			<div class="margins">
-				<a href="index.html"><img src="images/logounej.png" class="logo" alt=""  width="50" height="50"  titl=""/></a>
+				<a href="index.html"><img src="images/logounej.png" class="logo" alt="" width="50" height="50"
+						titl="" /></a>
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="etourism.html">E-Tourism</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li> <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
-                        <div id="id01" class="modal">
-  
-                                <form class="modal-content animate" name="login">
-                                  <div class="imgcontainer">
-                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                                    <img src="images/logounej.png" alt="Avatar" class="avatar">
-                                  </div>
-                              
-                                  <div class="container">
-                                    <label for="username"><b>Username</b></label>
-                                    <input type="text" placeholder="Enter Username" name="username" required>
-                              
-                                    <label for="password"><b>Password</b></label>
-                                    <input type="password" placeholder="Enter Password" name="password" required>
-                                      
-                                    <button type="button" value="Login" onClick="Login()">Login</button>
-                                    <label>
-                                      <input type="checkbox" checked="checked" name="remember"> Remember me
-                                    </label>
-                                  </div>
-                              
-                                  <div class="container" style="background-color:#f1f1f1">
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                    <span class="psw">Forgot <a href="#">password?</a></span>
-                                  </div>
-                                </form>
-                              </div>
-                    </ul>	
+						<li><a href="about.html">About</a></li>
+						<li> <a onclick="document.getElementById('id01').style.display='block'"
+								style="width:auto;">Login</a></li>
+						<div id="id01" class="modal">
+
+							<form class="modal-content animate" name="login">
+								<div class="imgcontainer">
+									<span onclick="document.getElementById('id01').style.display='none'" class="close"
+										title="Close Modal">&times;</span>
+									<img src="images/logounej.png" alt="Avatar" class="avatar">
+								</div>
+
+								<div class="container">
+									<label for="username"><b>Username</b></label>
+									<input type="text" placeholder="Enter Username" name="username" required>
+
+									<label for="password"><b>Password</b></label>
+									<input type="password" placeholder="Enter Password" name="password" required>
+
+									<button type="button" value="Login" onClick="Login()">Login</button>
+									<label>
+										<input type="checkbox" checked="checked" name="remember"> Remember me
+									</label>
+								</div>
+
+								<div class="container" style="background-color:#f1f1f1">
+									<button type="button" onclick="document.getElementById('id01').style.display='none'"
+										class="cancelbtn">Cancel</button>
+									<span class="psw">Forgot <a href="#">password?</a></span>
+								</div>
+							</form>
+						</div>
+					</ul>
 				</nav>
 			</div>
 		</header>
 
-			<section class="caption">
-				<h2 class="caption">E-Tourism</h2>
-				<h3 class="properties">Di Universitas Jember</h3>
-			</section>
+		<section class="caption">
+			<h2 class="caption">E-Tourism</h2>
+			<h3 class="properties">Di Universitas Jember</h3>
+		</section>
 	</section>
 
 
 
 	<section class="content">
 		<div class="margins">
-			<ul class="properties_list">
+			<ul class="properties_list" id="properties_list" page>
 				<li>
 					<a href="detail.html">
-						<img src="images/unej2.jpg" alt="" title="" class="property_img"/>
+						<img src="images/unej2.jpg" alt="" title="" class="property_img" />
 					</a>
-				
+
 					<div class="property_details">
 						<h1>
 							<a href="detail.html">Fakultas Farmasi</a>
@@ -76,9 +83,9 @@
 				</li>
 				<li>
 					<a href="detail.html">
-						<img src="images/unej3.jpg" alt="" title="" class="property_img"/>
+						<img src="images/unej3.jpg" alt="" title="" class="property_img" />
 					</a>
-				
+
 					<div class="property_details">
 						<h1>
 							<a href="detail.html">Fakultas Kedokteran</a>
@@ -88,9 +95,9 @@
 				</li>
 				<li>
 					<a href="detail.html">
-						<img src="images/unej2.jpg" alt="" title="" class="property_img"/>
+						<img src="images/unej2.jpg" alt="" title="" class="property_img" />
 					</a>
-				
+
 					<div class="property_details">
 						<h1>
 							<a href="detail.html">Fakultas Kedokteran Gigi</a>
@@ -100,9 +107,9 @@
 				</li>
 				<li>
 					<a href="detail.html">
-						<img src="images/unej3.jpg" alt="" title="" class="property_img"/>
+						<img src="images/unej3.jpg" alt="" title="" class="property_img" />
 					</a>
-				
+
 					<div class="property_details">
 						<h1>
 							<a href="detail.html">Fakultas Teknik,</a>
@@ -112,69 +119,74 @@
 				</li>
 				<li>
 					<a href="detail.html">
-						<img src="images/unej2.jpg" alt="" title="" class="property_img"/>
+						<img src="images/unej2.jpg" alt="" title="" class="property_img" />
 					</a>
-				
+
 					<div class="property_details">
 						<h1>
 							<a href="detail.html">Fakultas Teknologi Pertanian</a>
 						</h1>
 						<h2>Teknologi Pertanian</h2>
 					</div>
-                </li>
-                <li>
-                        <a href="detail.html">
-                            <img src="images/unej3.jpg" alt="" title="" class="property_img"/>
-                        </a>
-                    
-                        <div class="property_details">
-                            <h1>
-                                <a href="detail.html">Fakultas Pertanian</a>
-                            </h1>
-                            <h2>Faperta</h2>
-                        </div>
-                    </li>
+				</li>
 				<li>
 					<a href="detail.html">
-						<img src="images/unej2.jpg" alt="" title="" class="property_img"/>
+						<img src="images/unej3.jpg" alt="" title="" class="property_img" />
 					</a>
-				
+
+					<div class="property_details">
+						<h1>
+							<a href="detail.html">Fakultas Pertanian</a>
+						</h1>
+						<h2>Faperta</h2>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html">
+						<img src="images/unej2.jpg" alt="" title="" class="property_img" />
+					</a>
+
 					<div class="property_details">
 						<h1>
 							<a href="detail.html">Fakultas MIPA</a>
 						</h1>
 						<h2>FMIPA</h2>
 					</div>
-                </li>
-                <li>
-                        <a href="detail.html">
-                            <img src="images/unej3.jpg" alt="" title="" class="property_img"/>
-                        </a>
-                    
-                        <div class="property_details">
-                            <h1>
-                                <a href="detail.html">Fakultas Ilmu Komputer</a>
-                            </h1>
-                            <h2>Fasilkom</h2>
-                        </div>
-                    </li>
-                    <li>
-                            <a href="detail.html">
-                                <img src="images/unej2.jpg" alt="" title="" class="property_img"/>
-                            </a>
-                        
-                            <div class="property_details">
-                                <h1>
-                                    <a href="detail.html">Fakultas Hukum</a>
-                                </h1>
-                                <h2>Hukum</h2>
-                            </div>
-                        </li>
-               
-      
-    </section>	
-    <center>
-    <div class="pagination">
+				</li>
+				<li>
+					<a href="detail.html">
+						<img src="images/unej3.jpg" alt="" title="" class="property_img" />
+					</a>
+
+					<div class="property_details">
+						<h1>
+							<a href="detail.html">Fakultas Ilmu Komputer</a>
+						</h1>
+						<h2>Fasilkom</h2>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html">
+						<img src="images/unej2.jpg" alt="" title="" class="property_img" />
+					</a>
+
+					<div class="property_details">
+						<h1>
+							<a href="detail.html">Fakultas Hukum</a>
+						</h1>
+						<h2>Hukum</h2>
+					</div>
+				</li>
+
+
+	</section>
+	<div class="btn-more" id="btn-more">
+		<a href="#">More...</a>
+	</div>
+
+
+	<center>
+		<!-- <div class="pagination">
             <a href="#">&laquo;</a>
             <a class="active" href="#">1</a>
             <a href="#">2</a>
@@ -183,13 +195,67 @@
             <a href="#">5</a>
             <a href="#">6</a>
             <a href="#">&raquo;</a>
-         </div>	
-        </center>
+         </div>	 -->
+	</center>
 	<footer>
 		<center>PERANCANGAN WEBSITE</center>
-		
+
 
 	</footer>
-	
+
+	<script>
+
+		$("#btn-more").click(function (event) {
+			event.preventDefault();
+			var hal = $("#properties_list").attr('page');
+			hal = Number(hal);
+
+			if (hal == "") {
+				hal = 1;
+			}
+			else {
+				hal += 1;
+			}
+
+			$("#properties_list").attr('page', hal);
+			if (hal == 2) {
+				$("#btn-more").hide();
+			}
+
+			var path = "json/tema_" + hal + ".json";
+
+			$.ajax({
+				url: path,
+				type: 'GET',
+				dataType: 'json',
+			})
+				.done(function (data) {
+					console.log(data);
+					var gabung = "";
+					$.each(data, function (index, val) {
+						gabung += `
+				 <li>
+					<a href="detail.html">
+						<img src="`+ val.img + `" alt="" title="" class="property_img"/>
+					</a>
+				
+					<div class="property_details">
+						<h1>
+							<a href="detail.html">` + val.judul + `</a>
+						</h1>
+						<h2>` + val.judul + `</h2>
+					</div>
+				</li>
+				 `;
+					});
+
+					$("#properties_list").append(gabung);
+				})
+				.fail(function () {
+					console.log("error");
+				});
+		})
+	</script>
 </body>
+
 </html>
